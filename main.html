@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main page</title>
+    </head>
+
+    <style>
+        h2 {
+            text-align: center;
+            font-family: "Arkit Thin";
+            font-size: 40px;
+            font-weight: 100;
+        }
+        td {
+            text-align: left;
+            padding-right: 50px;
+            padding-top: 20px;
+        }
+
+        .inc {
+            background-color:#f1f1f1;
+            border: 0px;
+            padding: 8px;
+        }
+
+        .sub {
+            background-color: #5848de;
+            border: 0px; 
+            color: white;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-right: 20px;
+            padding-left: 20px;
+            font-size: smaller;
+        }
+
+        .last {
+            text-align: right;
+        }
+
+        
+    </style>
+    <body>
+        <h2>Reservation Form</h2>
+        <div>
+            <table align="center">
+                <form action="D:\NIKHIL\Programs\HTML\thanku.html">
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" class="inc" placeholder="Name" size="53" required></td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="text" class="inc" placeholder="Email" size="53" required></td>
+                    </tr>
+                     
+                    <tr>
+                        <td><label for="room">Room type: </label></td>
+                        <td><select name="room" id="r">
+                            <option value="" disabled selected hidden>Select</option>
+                            <option value="1">Single</option>
+                            <option value="2">Double</option>
+                            <option value="3">Family</option>
+                            <option value="4">VIP</option>
+                            </select>  </td>
+                    </tr>
+
+                    <tr>
+                        <td>Arrival date:</td>
+                        <td><input type="text" class="inc" size="53"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Departure date:</td>
+                        <td><input type="text" class="inc" size="53"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="num">Number of guests:</label></td>
+                        <td><select name="num">
+                                <option hidden> </option>
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                            </select>  </td>
+                    </tr>
+                     
+                    <tr>
+                        <td><label for="free">Free pickup</label></td>
+                        <td><input id="free" type="radio" name="click"> Yes
+                            <input id="free" type="radio" name="click">No  </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Flight number:</td>
+                        <td><input type="text" class="inc" size="53" placeholder="Flight number"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Special Requests:</td>
+                        <td><textarea rows="4" class="inc" cols="50" placeholder="Type here..."></textarea>
+                            </td>
+                    </tr>
+                     
+                    <tr>
+                        <td></td>
+                        <td class="last"> <input type="submit" class="sub" value="Submit" ></td>
+                    </tr>
+
+                </form>
+            </table>
+        </div>
+    </body>
+</html>
